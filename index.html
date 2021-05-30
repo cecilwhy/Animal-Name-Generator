@@ -1,5 +1,21 @@
 <html>
-  <head><title>Weird Animal Name Generator</title></head>
+  <head><title>Weird Animal Name Generator</title>
+    <script type="text/javascript">
+      var appearance = ['leafy','spotted','striped','flaming','hairy','spiny'];
+      var behavior = ['dancing','howling','spitting','smiling','groaning','jumping'];
+      var habitat = ['cave','swamp','water','treetop','mountain','desert'];
+      var animal = ['bug','fish','frog','bird','rodent','lizard'];
+      function generate(){
+        var new_animal;
+        new_animal = appearance[Math.floor(Math.random()*appearance.length)];
+        new_animal += ' ' + behavior[Math.floor(Math.random()*behavior.length)];
+        new_animal += ' ' + habitat[Math.floor(Math.random()*habitat.length)];
+        new_animal += ' ' + animal[Math.floor(Math.random()*animal.length)];
+        document.getElementById('animal-name').innerHTML = new_animal;
+      }
+    </script>
+  </head>
   <body>
-    <div><h1>Weird Animal Name Generator</h1><span>Your animal name is:</span><br /><span id='animal=name'></span></div>
+    <div><h1>Weird Animal Name Generator</h1><span>Your animal name is:</span><br /><span id='animal-name'></span></div>
+    <div><button onclick='generate()>Make It!</button></div>
 </html>
