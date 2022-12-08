@@ -1,10 +1,10 @@
 <html>
   <head><title>Weird Animal Name Generator</title>
     <script type="text/javascript">
-      var appearance = ['leafy','spotted','striped','flaming','hairy','spiny','wrinkly','speckled','sparkling','headless','frilly','waxy','tiny','humongous','blobby','bedazzled','scaly','angelic','spooky','fancy'];
-      var behavior = ['dancing','howling','spitting','smiling','groaning','jumping','digging','racing','creeping','snapping','slithereing','crawling','vanishing','sneaking','farting','hiding','hibernating','flying','spinning','snoozing'];                   
-      var habitat = ['cave','swamp','water','treetop','mountain','desert','polar','backyard','sea','savanna','rain forest','volcano','grass','sky','pond','river','lake','snow','dirt','galactic'];
-      var animal = ['bug','fish','frog','bird','rodent','lizard','monkey','pig','worm','slug','cat','dog','cow','horse','shark','sponge','ghost','dragon','beast','monster'];
+      var appearance = ['leafy','spotted','striped','flaming','hairy','spiny','wrinkly','speckled','sparkling','headless','frilly','waxy','tiny','humongous','blobby','bedazzled','scaly','angelic','spooky','fancy','fat','skinny','lenghty',];
+      var behavior = ['dancing','howling','spitting','smiling','groaning','jumping','digging','racing','creeping','snapping','slithereing','crawling','vanishing','sneaking','farting','hiding','hibernating','flying','spinning','snoozing','snoring'];                   
+      var habitat = ['cave','swamp','water','treetop','mountain','desert','polar','backyard','sea','savanna','rain forest','volcano','grass','sky','pond','river','lake','snow','dirt','galactic','your wall'];
+      var animal = ['bug','fish','frog','bird','rodent','lizard','monkey','pig','worm','slug','cat','dog','cow','horse','shark','sponge','ghost','dragon','beast','monster','alien','corn'];
       function generate(){
         var new_animal;
         new_animal = appearance[Math.floor(Math.random()*appearance.length)];
@@ -18,4 +18,6 @@
   <body>
     <div><h1>Weird Animal Name Generator</h1><span>Your animal name is:</span><br /><span id='animal-name'></span></div>
     <div><button onclick='generate()'>Make It!</button></div>
+  </body>
 </html>
+  
